@@ -1,0 +1,651 @@
+/*
+
+Theme Name: Vasta teste
+Author: Joedson Barbosa
+Description: Esse é o teste para a Vasta
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE (HC Desenvolvimentos v1)
+--------------------------------------------
+**** GERAL
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @media
+
+font-family: não definida;
+
+*/
+
+
+/* GERAL */
+
+html,
+body,
+header,
+main,
+footer,
+article,
+div,
+span,
+p,
+a,
+figure,
+img,
+small,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    outline: none;
+    list-style: none;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* BODY */
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    background-image: url('back_header_mob.png');
+    background-size: cover;
+}
+
+header .vasta {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: -3px;
+    margin: -8px 9px;
+}
+
+header .linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .linha_coluna--esquerda {
+    margin: -15px 6px;
+}
+
+header .linha_coluna--direita {}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 20px;
+}
+
+header .menu:hover {}
+
+header .menu {
+    display: grid;
+    justify-items: center;
+}
+
+header ul li {}
+
+header ul ul {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    align-items: center;
+}
+
+header ul li:hover ul {
+    visibility: visible;
+    position: relative;
+}
+
+header ul li img {
+    vertical-align: middle;
+    width: 30px;
+}
+
+header .busca {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+}
+
+header .busca img {
+    width: 20px;
+    margin-block: 5px;
+}
+
+header .txtBusca {
+    background-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+    height: 1rem;
+    width: 60px;
+    border: none;
+}
+
+header .btnBusca {}
+
+header ul ul li {
+    font-size: 10px;
+    padding: 1px;
+}
+
+header ul ul li img {}
+
+header h2 {
+    text-align: center;
+}
+
+header h4 {
+    text-align: center;
+    margin-bottom: 80px;
+    color: gray;
+}
+
+header .button {
+    padding: 10px;
+    border: none;
+    background-color: #2ba52b;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+header p {
+    padding: 15px
+}
+
+.sobre {
+    text-align: center;
+    padding: 16px;
+}
+
+main {}
+
+main article {}
+
+main article .about {}
+
+main article .about__desk {}
+
+main article .about__desk .about__bloc1 {}
+
+main article .about2 {
+    display: none;
+}
+
+main article h2 {
+    text-align: center;
+}
+
+main article .about img {
+    width: 100%;
+}
+
+main article .about p {
+    margin: 12px;
+    font-family: system-ui;
+    line-height: 27px;
+}
+
+main article .about a {
+    display: flex;
+    justify-content: center;
+}
+
+main article .about a img {
+    width: 30px;
+    margin-top: -5px;
+}
+
+main .port {}
+
+main .port h2 {
+    text-align: center;
+}
+
+main .port .port__quadro {}
+
+main .port ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main .port ul li {
+    margin-bottom: 12px;
+}
+
+main .port ul li img {
+    width: 190px;
+    height: 150px;
+}
+
+main .port ul .port__desk {
+    display: none;
+}
+
+main .port .button__project {
+    text-align: center;
+}
+
+main .port .more__projects {
+    padding: 25px;
+    margin-top: 15px;
+    border: none;
+    background-color: #4c86ad;
+    color: white;
+    font-size: inherit;
+    margin-bottom: 15px;
+}
+
+main .dep {}
+
+main .dep h2 {
+    text-align: center;
+}
+
+main .dep .depo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .dep a {}
+
+main .dep a img {
+    width: 33px;
+}
+
+main .dep .text__depo {
+    margin: 13px 12px;
+}
+
+main .dep .stars {
+    margin-left: 13px;
+}
+
+main .dep .stars ul {}
+
+main .dep .stars ul li {
+    display: inline;
+}
+
+main .dep .stars ul ul {}
+
+main .dep .stars ul ul li {}
+
+main .dep .stars ul ul li img {
+    width: 12px;
+}
+
+main .depo .dep__text {
+    margin: 9px;
+    margin-top: 18px;
+    display: flex;
+    font-size: 15px;
+}
+
+main .dep .stars ul li img {
+    width: 84px;
+}
+
+main .dep .depo3 {
+    display: none;
+}
+
+main .dep p {}
+
+main .contact {}
+
+main .contact h2 {
+    text-align: center;
+}
+
+main .contact form {
+    margin: 16px;
+    text-align: center;
+}
+
+main .contact form input {
+    padding: 8px;
+    width: 365px;
+    margin: 3px;
+    border: 1px solid;
+}
+
+main .contact form .nomeid {}
+
+main .contact form .sobreNomeid {}
+
+main .contact form .emailid {}
+
+main .contact form .foneid {}
+
+main .contact form .menssagem {
+    margin: 3px;
+    border: 1px solid;
+    padding: 7px;
+    font-size: 14px;
+    width: 367px;
+    height: 106px;
+}
+
+main .contact form p {
+    font-size: 12px;
+    text-align: center;
+    margin: 12px;
+}
+
+main .contact form a {
+    color: blue;
+}
+
+main .contact form .enviar {
+    padding: 10px;
+    border: none;
+    background-color: #2ba52b;
+    color: white;
+    display: block;
+    margin: auto;
+    font-size: 24px;
+}
+
+footer {
+    color: white;
+    background: #2e2e2e;
+    padding: 3px;
+}
+
+footer .container {
+    margin: 4% 10px;
+    border: 5px solid;
+    color: white;
+    width: 95%;
+    height: 100%;
+    padding: 2px;
+}
+
+footer .vasta {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: -3px;
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    margin: -40px 0px;
+}
+
+footer .vasta h1 {}
+
+footer .inscrever {}
+
+footer .inscrever h4 {
+    text-align: center;
+    color: white;
+    word-spacing: 3px;
+    font-size: 18px;
+    padding: 0px 10px;
+    line-height: 33px;
+}
+
+footer form {
+    text-align: center;
+}
+
+footer form input {}
+
+footer form .emailid {
+    FONT-SIZE: 17px;
+    padding: 10px 0;
+}
+
+footer form .enviar {
+    padding: 15px;
+    background-color: #2ba52b;
+    color: white;
+    margin: 0px -6px;
+    font-size: 11px;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer .foot__port {}
+
+footer .foot__port ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 40px;
+    justify-content: space-evenly;
+}
+
+footer .foot__port ul li {
+    margin-bottom: 15px;
+}
+
+footer .foot__port ul li figure {}
+
+footer .foot__port ul li figcaption {
+    background-color: #404040;
+    margin-top: -4px;
+    margin-bottom: 3px;
+}
+
+footer .foot__port ul li figure img {
+    width: 131px;
+}
+
+footer .foot__port ul li figure a {
+    color: white;
+    font-size: 12px;
+    margin: 0 36%;
+}
+
+footer .menus {}
+
+footer .menus ul {
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+footer .menus ul li {
+    border: 2px solid;
+    border-color: #fff;
+    padding: 6px 0px;
+    margin: 0px -4px;
+}
+
+footer .menus ul ul {
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s;
+}
+
+footer .menus ul li:hover ul {
+    height: auto;
+    max-height: 200px;
+    transition: all .4s;
+    visibility: visible;
+}
+
+footer .menus ul ul:hover {}
+
+footer .menus footer .menus ul ul li {
+    float: none;
+    border-bottom: solid 2px #ccc;
+}
+
+footer .menus ul ul li a {
+    color: white;
+}
+
+footer .menu {
+    text-align: center;
+    border: 3px solid;
+    color: white;
+    margin: -5px -5px;
+    padding: 8px;
+}
+
+footer .sobre2 {
+    text-align: center;
+    border: 3px solid;
+    color: white;
+    margin: -5px -5px;
+    padding: 8px;
+}
+
+footer .more {
+    color: white;
+}
+
+footer .menu img {
+    width: 18px;
+}
+
+footer .more2 {
+    color: white;
+}
+
+footer .sobre2 img {
+    width: 18px;
+}
+
+footer .vasta2 {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    header .vasta {
+        margin: -8px 59px;
+    }
+    header ul ul li {
+        font-size: 11px;
+        padding: 0px 9px;
+    }
+    header ul ul {
+        visibility: visible;
+        display: flex;
+        width: -1px;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        flex-direction: row;
+    }
+    header ul li img {
+        display: none;
+    }
+    header .busca {
+        display: none;
+    }
+    header h2 {
+        text-align: left;
+        margin: 52px 62px;
+    }
+    header h4 {
+        text-align: center;
+        margin-bottom: 80px;
+        color: gray;
+        text-align: left;
+        margin-bottom: 80px;
+        color: gray;
+        margin: -49px 64px;
+    }
+    header p {
+        padding: 41px;
+    }
+    header .button {
+        margin: 57px 63px;
+    }
+    main article {
+        margin: 0 60px;
+    }
+    main article .about img {
+        width: 35%;
+    }
+    main article .about__desk {
+        display: flex;
+        align-items: flex-start;
+    }
+    main article .about p {
+        margin: -10px 19px;
+        font-family: system-ui;
+        line-height: 26px;
+        font-size: 12px;
+    }
+    main article .about2 {
+        display: block;
+        display: flex;
+        margin: 16px 0;
+    }
+    main article .about2 p {
+        margin: 4px 0;
+        font-family: system-ui;
+        line-height: 26px;
+        font-size: 12px;
+    }
+    main article .about2 img {
+        width: 26%;
+    }
+    main article .about a img {
+        display: none;
+    }
+    main article .about a {
+        display: flex;
+        justify-content: flex-start;
+        margin: 19px 19px;
+        background-color: #4c86ad;
+        color: white;
+        padding: 9px 17px;
+        width: 109px;
+    }
+    main .port ul .port__desk {
+        display: block;
+        display: contents;
+    }
+    main .port .port__quadro {
+        margin: 0 7%;
+    }
+    main .port .more__projects {
+        padding: 15px;
+        margin-top: 15px;
+        border: none;
+        background-color: #4c86ad;
+        color: white;
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    main .dep .depo3 {
+        display: block;
+        display: contents;
+    }
+    main .depo .dep__text {
+        margin: 9px;
+        margin-top: 18px;
+        display: flex;
+        font-size: 11px;
+    }
+    main .dep p {
+        margin: 5px 0;
+    }
+}
